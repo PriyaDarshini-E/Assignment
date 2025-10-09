@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flooding & Drainage Challenges</title>
+    <link rel="stylesheet" href="../Task/tech_titans.css">
+    <link rel="website icon"  type="png"
+    href="../Task/Chennai_Corporation_Emblem.png">
+</head>
+<body>
+<center>
+  <div class="form-container" id="issues">
+    <h1>Report an Issue</h1>
+    <form action="table.html" method="post">
+      
+      <label>Full Name:</label>
+      <input type="text" placeholder="Enter your full name" required>
+      <br><br>
+
+      <label>Email Address:</label>
+      <input type="email" placeholder="Enter your email" required>
+      <br><br>
+
+      <label>Location:</label>
+      <input type="text" placeholder="Enter your area or street name" required>
+      <br><br>
+
+      <label for="issue-type">Issue Type:</label>
+      <select id="issue-type" name="issue-type" required>
+        <option value="">-- Select an issue --</option>
+        <option value="flooding">Flooding</option>
+        <option value="blocked-drain">Blocked Drain</option>
+        <option value="poor-infrastructure">Poor Drainage Infrastructure</option>
+        <option value="other">Other</option>
+      </select>
+      <br><br>
+
+      <label>Describe the Issue:</label>
+      <textarea rows="4" placeholder="Explain the problem in detail" required></textarea>
+      <br><br>
+
+      <input type="submit" value="Submit Report">
+    </form>
+    <p class="note">Your information will be kept confidential.</p>
+  </div>
+</center>
+</body>
+</html>

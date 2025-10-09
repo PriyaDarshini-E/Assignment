@@ -1,0 +1,14 @@
+a{
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-decoration: none; 
+    color: rgb(87, 22, 192);
+    padding: 0 10px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+a:hover{
+    color:orange;
+    text-decoration: underline;
+    text-decoration-color: rgb(221, 16, 143);
+}
