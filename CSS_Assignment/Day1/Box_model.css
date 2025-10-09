@@ -1,0 +1,47 @@
+#text{
+    background-color: chocolate;
+    margin: 20px;
+    border: 10px solid chartreuse;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    float:inline-start ;
+
+}
+
+#image{
+    background-color: rgb(153, 3, 133);
+    margin: 20px;
+    border: 10px solid rgb(2, 134, 9);
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    float: left;
+    text-align: center;
+}
+
+
+#link{
+     background-color: yellow;
+    margin: 20px;
+    border: 10px solid red ;
+     padding: 20px;
+    width: 200px;
+    height:200px;
+    text-align: center;
+    float: inline-end;
+}
+
+#video{
+     background-color:rgb(16, 241, 230);
+    margin: 20px;
+    border: 10px solid  rgb(20, 3, 179);
+     padding: 20px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+     
+     float: right;
+    
+}

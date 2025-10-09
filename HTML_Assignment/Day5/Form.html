@@ -1,0 +1,99 @@
+<html>
+<head>
+  <title>Form Elements Example</title>
+</head>
+<body>
+  <h1>HTML Form Elements Example</h1>
+
+  <form>
+    <fieldset>
+      <legend>Basic Inputs</legend>
+      <label>Text: <input type="text" name="username" placeholder="Enter name"></label><br>
+      <label>Email: <input type="email" name="email" placeholder="Enter email"></label><br>
+      <label>Password: <input type="password" name="password"></label><br>
+      <label>Search: <input type="search" name="search"></label><br>
+      <label>Tel: <input type="tel" name="phone"></label><br>
+      <label>URL: <input type="url" name="website"></label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Numbers & Colors</legend>
+      <label>Number: <input type="number" name="age" min="1" max="100"></label><br>
+      <label>Range: <input type="range" name="points" min="0" max="10"></label><br>
+      <label>Color: <input type="color" name="favcolor"></label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Date & Time</legend>
+      <label>Date: <input type="date" name="date"></label><br>
+      <label>Datetime-local: <input type="datetime-local" name="dt"></label><br>
+      <label>Month: <input type="month" name="month"></label><br>
+      <label>Week: <input type="week" name="week"></label><br>
+      <label>Time: <input type="time" name="time"></label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Textarea & File</legend>
+      <label>File: <input type="file" name="file"></label><br>
+      <label>Textarea:<br><textarea name="message" rows="4" cols="30"></textarea></label><br>
+      <input type="hidden" name="hiddenValue" value="12345">
+    </fieldset>
+
+    <fieldset>
+      <legend>Choices</legend>
+      <p>Checkbox:</p>
+      <label><input type="checkbox" name="hobby" value="music"> Music</label>
+      <label><input type="checkbox" name="hobby" value="sports"> Sports</label>
+      <label><input type="checkbox" name="hobby" value="travel"> Travel</label><br>
+
+      <p>Radio:</p>
+      <label><input type="radio" name="gender" value="male"> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+      <label><input type="radio" name="gender" value="other"> Other</label><br>
+
+      <p>Select:</p>
+      <select name="country">
+        <option value="">Select Country</option>
+        <option value="in">India</option>
+        <option value="us">USA</option>
+        <option value="jp">Japan</option>
+      </select><br>
+
+      <p>Multiple Select:</p>
+      <select name="languages" multiple>
+        <option value="english">English</option>
+        <option value="hindi">Hindi</option>
+        <option value="japanese">Japanese</option>
+      </select><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Other Elements</legend>
+      <label>Datalist: <input list="cities" name="city"></label>
+      <datalist id="cities">
+        <option value="Bengaluru">
+        <option value="Tokyo">
+        <option value="New York">
+      </datalist><br>
+
+      <label>Progress:</label>
+      <progress value="50" max="100"></progress><br>
+
+      <label>Meter:</label>
+      <meter value="0.7">70%</meter><br>
+
+      <label>Readonly: <input type="text" value="Read Only" readonly></label><br>
+      <label>Disabled: <input type="text" value="Disabled" disabled></label><br>
+
+      <label>Output: <output>123</output></label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Buttons</legend>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <button type="button">Click Me</button>
+    </fieldset>
+  </form>
+</body>
+</html>

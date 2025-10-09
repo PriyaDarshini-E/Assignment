@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>Alien Job Application</title>
+    </head>
+    <body id="home">
+        <center>
+            <h1>Welcome to Alien World </h1>
+            <img src="../../Images/alienbanner" alt="alienbanner" width="800">
+            <br><br>
+            <a href="#home">HOME </a>&nbsp; | &nbsp;
+            <a href="#about">ABOUT </a>&nbsp; | &nbsp;
+            <a href="#app">APPLICATION </a>&nbsp; | &nbsp;
+            <a href="#contact">CONTACT</a>
+        </center>
+        <br>
+        <main id="about">
+            <h2><u>ABOUT</u> :</h2>
+        <p>Welcome to <strong>Alien World </strong>the ultimate job portal of our galaxy!</p>
+        <p>We believe that aliens deserve equal job opportunities here on Earth. Whether you have 3 arms, 12 eyes, or a glowing head,
+            we have got the right career path for you.</p>    
+         <ul>
+        <li>Jobs available in Abduction Management</li>
+        <li>Intergalactic Food Delivery Services</li>
+        <li>Space Technology & UFO Maintenance</li>
+        <li>Acting Roles for Alien Movies</li>
+        </ul>
+        <p>Our mission is simple: <em>Bring Aliens and Humans together</em> 
+        through meaningful work. So stop floating in space and start filling out your application today!</p>
+        </main>
+        <br>
+        <section id="app">
+           <h2><u>APPLICATION</u> :</h2>
+
+           <h3>Alien Job Application Form</h3>
+
+        <form>
+            <label>Alien Name:</label>
+            <input type="text" name="alienName" placeholder="Enter your alien name" required>
+            <br><br>
+
+            <label>Space Email:</label>
+            <input type="email" name="alienEmail" placeholder="alien@galaxy.com">
+            <br><br>
+
+            <label>Number of Tentacles:</label>
+            <input type="number" name="tentacles" min="0" max="100">
+            <br><br>
+
+            <p>Do you come in peace?</p>
+            <input type="radio" name="peace" value="yes">
+            <label for="peaceYes">Yes</label>
+            <input type="radio"  name="peace" value="no">
+            <label for="peaceNo">No</label>
+            <input type="radio" name="peace" value="maybe">
+            <label for="peaceMaybe">Depends on mood</label>
+            <br><br>
+
+            <p>Skills (select all that apply):</p>
+            <input type="checkbox"  name="skills" value="abduction">
+            <label>Abduction</label>
+            <input type="checkbox" name="skills" value="telepathy">
+            <label>Telepathy</label>
+            <input type="checkbox" " name="skills" value="laserEyes">
+            <label>Laser Eyes</label>
+            <br><br>
+
+            <label>Home Planet:</label>
+            <select name="planet">
+                <option value="">Select your planet</option>
+                <option value="mars">Mars</option>
+                <option value="venus">Venus</option>
+                <option value="neptune">Neptune</option>
+                <option value="unknown">Unknown Galaxy</option>
+            </select>
+            <br><br>
+
+            <label>Arrival Date on Earth:</label>
+            <input type="date" name="arrivalDate">
+            <br><br>
+
+            <label>Preferred Abduction Time:</label>
+            <input type="time" name="abductionTime">
+            <br><br>
+
+            <label>Evilness Level:</label>
+            <input type="range" name="evilLevel" min="0" max="10">
+            <br><br>
+
+            <label>Skin Color:</label>
+            <input type="color" name="skinColor">
+            <br><br>
+
+            <label>Upload Spaceship Photo:</label>
+            <input type="file" name="spaceshipPic">
+            <br><br>
+
+            <label>Why should we hire you?</label><br>
+            <textarea id="message" name="message" rows="4" cols="40" placeholder="Convince us you are the best alien for the job"></textarea>
+            <br><br>
+
+            <input type="hidden" name="galaxyCode" value="42X-MILKYWAY">
+            <!--Hidden inputs are not visible on the webpage, but their data is still sent to the server when the form is submitted
+            To identify where the form came from (useful when you have multiple forms on different pages).-->
+
+            <input type="submit" value="Apply Now" action="alientable.html">
+            <input type="reset" value="Reset Form">
+        </form>
+
+    </section>
+    <br><br>
+    <footer id="contact">
+        <h4><u>CONTACT</u>&nbsp; &nbsp;<u> US</u> :</h4>
+        <p>Email us at: <a href="mailto:earthjobs@space.com">earthjobs@space.com</a></p>
+        <p>Visit our HQ: <a href="https://maps.google.com" target="_blank">View on Google Maps</a></p>
+    </footer>
+
+    </body>
+</html>
