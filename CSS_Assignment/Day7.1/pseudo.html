@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pseudo-Classes and Pseudo-Elements</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>CSS Pseudo-Classes and Pseudo-Elements</h1>
+
+  <section>
+    <h2>Pseudo-Class</h2>
+    <p>
+      A <b>pseudo-class</b> is used to define a special state of an element.  
+      It allows you to style elements based on their interaction, position, or other dynamic conditions.
+    </p>
+
+    <h3>Syntax:</h3>
+    <pre><code>selector:pseudo-class {
+  property: value;
+}</code></pre>
+
+    <h3>Examples:</h3>
+    <pre><code>a:hover {
+  color: red;
+}
+
+input:focus {
+  border-color: blue;
+}
+
+p:first-child {
+  font-weight: bold;
+}</code></pre>
+
+    <h3>Common Pseudo-Classes:</h3>
+    <ul>
+      <li><code>:hover</code> - When the mouse pointer is over an element.</li>
+      <li><code>:active</code>  - When an element is being clicked.</li>
+      <li><code>:focus</code>  -When an element (like input) is focused.</li>
+      <li><code>:visited</code>  - Styles visited links.</li>
+      <li><code>:nth-child(n)</code>  - Selects the nth child element.</li>
+      <li><code>:first-child</code> / <code>:last-child</code>  - Selects first or last child.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Pseudo-Element</h2>
+    <p>
+      A <b>pseudo-element</b> is used to style specific parts of an element.  
+      It allows you to insert or target sub-parts of an element that are not directly in the HTML structure.
+    </p>
+
+    <h3>Syntax:</h3>
+    <pre><code>selector::pseudo-element {
+  property: value;
+}</code></pre>
+
+    <h3>Examples:</h3>
+    <pre><code>p::first-line {
+  color: blue;
+  font-weight: bold;
+}
+
+p::first-letter {
+  font-size: 30px;
+  color: red;
+}
+
+h1::before {
+  content: "★ ";
+  color: gold;
+}
+
+h1::after {
+  content: " ★";
+  color: gold;
+}</code></pre>
+
+    <h3>Common Pseudo-Elements:</h3>
+    <ul>
+      <li><code>::before</code>  - Inserts content before an element.</li>
+      <li><code>::after</code>  - Inserts content after an element.</li>
+      <li><code>::first-letter</code>  - Styles the first letter of text.</li>
+      <li><code>::first-line</code>  - Styles the first line of text.</li>
+      <li><code>::selection</code>  - Styles the part of text selected by the user.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Difference Between Pseudo-Class and Pseudo-Element</h2>
+    <table border="1" cellspacing="0" cellpadding="8" style="width:100%; border-collapse: collapse;">
+      <tr style="background-color:#e2ebfb;">
+        <th>Aspect</th>
+        <th>Pseudo-Class</th>
+        <th>Pseudo-Element</th>
+      </tr>
+      <tr>
+        <td>Definition</td>
+        <td>Defines a special <b>state</b> of an element.</td>
+        <td>Styles a <b>specific part</b> of an element.</td>
+      </tr>
+      <tr>
+        <td>Syntax</td>
+        <td><code>selector:pseudo-class</code></td>
+        <td><code>selector::pseudo-element</code></td>
+      </tr>
+      <tr>
+        <td>Example</td>
+        <td><code>a:hover</code></td>
+        <td><code>p::first-line</code></td>
+      </tr>
+    </table>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Position and Z-Index in CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>CSS Position and Z-Index</h1>
+
+  <section>
+    <h2>1. Position Property</h2>
+    <p>
+      The <b>position</b> property in CSS is used to specify the positioning method of an element.
+      It determines how an element is placed in the document flow and how it interacts with other elements.
+    </p>
+
+    <h3>Syntax:</h3>
+    <pre><code>position: static | relative | absolute | fixed | sticky;</code></pre>
+
+    <h3>Types of Position:</h3>
+    <table>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td><code>static</code></td>
+        <td>Default position. Elements appear in normal document flow.</td>
+        <td><code>position: static;</code></td>
+      </tr>
+      <tr>
+        <td><code>relative</code></td>
+        <td>Element is positioned relative to its normal position.</td>
+        <td><code>position: relative; top: 20px; left: 30px;</code></td>
+      </tr>
+      <tr>
+        <td><code>absolute</code></td>
+        <td>Element is positioned relative to its nearest positioned ancestor (not static).</td>
+        <td><code>position: absolute; top: 50px; right: 20px;</code></td>
+      </tr>
+      <tr>
+        <td><code>fixed</code></td>
+        <td>Element is positioned relative to the viewport (stays in same place on scroll).</td>
+        <td><code>position: fixed; bottom: 10px; right: 10px;</code></td>
+      </tr>
+      <tr>
+        <td><code>sticky</code></td>
+        <td>Element toggles between relative and fixed depending on the scroll position.</td>
+        <td><code>position: sticky; top: 0;</code></td>
+      </tr>
+    </table>
+
+    <h3>Example:</h3>
+    <pre><code>div {
+  position: relative;
+  top: 30px;
+  left: 20px;
+}</code></pre>
+
+    <h3>Note:</h3>
+    <ul>
+      <li>Properties like <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> work only with <b>relative, absolute, fixed, or sticky</b> positions.</li>
+      <li><code>static</code> positioned elements ignore these offset properties.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>2. Z-Index Property</h2>
+    <p>
+      The <b>z-index</b> property controls the <b>stacking order</b> of elements that overlap.  
+      Elements with a higher z-index value appear in front of those with lower values.
+    </p>
+
+    <h3>Syntax:</h3>
+    <pre><code>z-index: number;</code></pre>
+
+    <h3>Example:</h3>
+    <pre><code>div.box1 {
+  position: absolute;
+  z-index: 1;
+}
+
+div.box2 {
+  position: absolute;
+  z-index: 5;
+}</code></pre>
+
+    <p>
+      In this example, <code>.box2</code> will appear <b>above</b> <code>.box1</code> because it has a higher <b>z-index</b> value.
+    </p>
+
+    <h3>Important Points:</h3>
+    <ul>
+      <li><code>z-index</code> works only on elements with a <b>position value other than static</b>.</li>
+      <li>Higher <code>z-index</code> values bring elements to the front.</li>
+      <li>Elements with the same stacking context depend on HTML order if z-index is equal.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Difference Between Position Types</h2>
+    <table>
+      <tr>
+        <th>Property</th>
+        <th>Static</th>
+        <th>Relative</th>
+        <th>Absolute</th>
+        <th>Fixed</th>
+        <th>Sticky</th>
+      </tr>
+      <tr>
+        <td>In Document Flow</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+        <td>No</td>
+        <td>Partially</td>
+      </tr>
+      <tr>
+        <td>Uses top/left/right/bottom</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Relative To</td>
+        <td>Normal flow</td>
+        <td>Itself</td>
+        <td>Nearest positioned ancestor</td>
+        <td>Viewport</td>
+        <td>Scroll position</td>
+      </tr>
+    </table>
+  </section>
+
+</body>
+</html>

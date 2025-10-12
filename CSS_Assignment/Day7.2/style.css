@@ -1,0 +1,48 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f8faff;
+      color: #222;
+      margin: 40px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #1a4b8f;
+    }
+
+    section {
+      background: #fff;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+
+    code {
+      background-color: #e7ecf7;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-size: 15px;
+    }
+
+    pre {
+      background-color: #f2f4fa;
+      padding: 10px;
+      border-left: 5px solid #1a4b8f;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e2ebfb;
+    }

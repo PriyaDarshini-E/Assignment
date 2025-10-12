@@ -1,0 +1,28 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f8ff;
+      color: #222;
+      margin: 40px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #1b4b91;
+    }
+    code{
+      background-color: #e7ecf7;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-size: 15px;
+    }
+    pre {
+      background-color: #f2f4fa;
+      padding: 10px;
+      border-left: 5px solid #1b4b91;
+      border-radius: 5px;
+    }
+    section {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
