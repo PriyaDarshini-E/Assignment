@@ -37,6 +37,13 @@ a{
     align-items: center;
     justify-content: center;
 }
+.grp{
+    width: 50%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .cards div {
     position: relative;
 }

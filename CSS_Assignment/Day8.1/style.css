@@ -1,0 +1,25 @@
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items : center;
+}
+.box1{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+@media (max-width:480px), (min-width:601px) and (max-width:768px) ,(min-width:1025px) and (max-width:1200px) {
+    .box1{
+        visibility: hidden;
+    }
+} 
+
+@media (min-width:481px) and (max-width:600px) ,(min-width:769px) and (max-width:1024px) ,(max-width:1600px){
+    .box1{
+        visibility:visible;
+    }
+} 

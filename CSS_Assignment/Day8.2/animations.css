@@ -1,0 +1,38 @@
+.cards {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.child_cards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    transition: all 0.4s ease;
+}
+.child_cards img {
+     transition: transform 0.5s ease;
+     border-radius: 5px;
+}
+.child_cards:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+label {
+    font-size: large;
+    font-weight: bold;
+}
+input{
+    transition: all 2s ease;
+}
+input:focus{
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+button{
+    transition: all 5s ease;
+}
+button:hover{
+background-color: blue;
+size: 10px;
+}
