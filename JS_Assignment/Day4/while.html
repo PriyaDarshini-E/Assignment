@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while loop</title>
+</head>
+
+<body>
+    <h1>This looping concept using <q>while</q> loop</h1>
+    <script>
+        // 0 to 10
+        var a = 0;
+        while (a <= 10) {
+            console.log(a);
+            // document.write(a + " ");
+            a++;
+        }
+
+        // 10 to 1
+        var a = 10;
+        while (a >= 1) {
+            console.log(a);
+            // document.writeln(a);
+            a--;
+        }
+
+        // Even numbers 1 to 20
+        var a = 1;
+        while (a <= 20) {
+            if (a % 2 == 0) console.log(a);
+            // document.write(a + " ");
+            a++;
+        }
+
+        // Multiples of 5 up to 50
+        var a = 1;
+        while (a <= 50) {
+            if (a % 5 == 0) console.log(a);
+            // document.write(a + " ");
+            a++;
+        }
+
+        // Multiplication table of 5
+        var a = 1;
+        while (a <= 50) {
+            console.log("5 * " + a + " = " + (5 * a));
+            // document.write("5 × " + a + " = " + (5 * a) + "<br>");
+            a++;
+        }
+
+        // Squares 1 to 10
+        var squa = 1;
+        while (squa <= 10) {
+            var squaroot = squa * squa;
+            console.log(squaroot);
+            // document.write(squaroot + " ");
+            squa++;
+        }
+
+        // Odd numbers 1 to 20
+        var odd = 1;
+        while (odd <= 20) {
+            if (odd % 2 != 0) console.log(odd);
+            // document.write(odd + " ");
+            odd++;
+        }
+
+        // Print name 5 times
+        var name = 0;
+        while (name < 5) {
+            console.log("Priya");
+            // document.write("Priya <br>");
+            name++;
+        }
+
+        // Star pattern 1 to 5
+        var i = 1;
+        var star = "";
+        while (i <= 5) {
+            star += "*";
+            console.log(star);
+            // document.write(star + "<br>");
+            i++;
+        }
+
+        // Numbers 1 to 10 concatenated
+        var i = 1;
+        var numb = "";
+        while (i <= 10) {
+            numb += i;
+            console.log(numb);
+            // document.write(numb + "<br>");
+            i++;
+        }
+
+        // Subtract numbers 1 to 10
+        var i = 1;
+        var numb = 0; // must initialize as number
+        while (i <= 10) {
+            numb -= i;
+            console.log(numb);
+            // document.write(numb + "<br>");
+            i++;
+        }
+
+        // Factorial 1 to 10
+        var i = 1;
+        var numb = 1;
+        while (i <= 10) {
+            numb *= i;
+            console.log(numb);
+            // document.write(numb + "<br>");
+            i++;
+        }
+
+        // Numbers 10 to 1 concatenated
+        var i = 10;
+        var numb = "";
+        while (i >= 1) {
+            numb += i;
+            console.log(numb);
+            // document.write(numb + "<br>");
+            i--;
+        }
+
+        // Cubes 1 to 10
+        var cube = 1;
+        while (cube <= 10) {
+            var cuberoot = cube * cube * cube;
+            console.log(cuberoot);
+            document.write(cuberoot + " ");
+            cube++;
+        }
+
+    </script>
+</body>
+
+</html>
