@@ -1,0 +1,12 @@
+array1.forEach(function(item) {});
+array2.forEach(function(element, index) {});
+array3.forEach(function(value, index, array) {});
+array4.forEach((item) => {});
+array5.forEach((item, index) => {});
+array6.forEach((value, index, arr) => {});
+array7.forEach(item => {});
+array8.forEach((num) => {});
+array9.forEach((x, i) => {});
+array10.forEach(function(x) {});
+array11.forEach(function(x, i, arr) {});
+array12.forEach((data, idx, all) => {});

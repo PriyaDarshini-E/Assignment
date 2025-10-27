@@ -1,0 +1,12 @@
+let fun1 = function() {};
+let fun2 = function(a) {};
+let fun3 = function(a, b) {};
+let fun4 = function(x, y, z) {};
+let fun5 = function(name) {};
+let fun6 = function(num) {};
+let fun7 = function(arr) {};
+let fun8 = function(obj) {};
+let fun9 = function(a, b, c) {};
+let fun10 = function(city) {};
+let fun11 = function(price, tax) {};
+let fun12 = function(color) {};

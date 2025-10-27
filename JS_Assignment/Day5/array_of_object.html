@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array of Objects</title>
+</head>
+<body>
+  <h1>Array of Objects: Each array contains multiple structured objects.</h1>
+
+  <script>
+    //Simple Array of object
+    let fruits = [
+      { name: "Apple", color: "Red" },
+      { name: "Banana", color: "Yellow" },
+      { name: "Grapes", color: "Green" }
+    ];
+    console.log("Fruits Array:", fruits);
+    document.write("Fruits Array: ");
+    for (let i = 0; i<fruits.length; i++) {
+      document.write(fruits[i].name + " - " + fruits[i].color + "<br>");
+    }
+    document.write("<br>");
+
+    let cars = [
+      { brand: "Toyota", model: "Corolla" },
+      { brand: "Honda", model: "Civic" },
+      { brand: "Ford", model: "Focus" }
+    ];
+    console.log("Cars Array:", cars);
+    document.write("Cars Array: ");
+    for (let i = 0; i<cars.length; i++) {
+      document.write(cars[i].brand + " - " + cars[i].model + "<br>");
+    }
+    document.write("<br>");
+
+    let books = [
+      { title: "JS Basics", pages: 200 },
+      { title: "Python 101", pages: 250 },
+      { title: "C++ Guide", pages: 300 }
+    ];
+    console.log("Books Array:", books);
+    document.write("Books Array: ");
+    for (let i = 0; i<books.length; i++) {
+      document.write(books[i].title + " - " + books[i].pages + " pages<br>");
+    }
+    document.write("<br>");
+
+    let laptops = [
+      { brand: "HP", ram: "8GB" },
+      { brand: "Dell", ram: "16GB" },
+      { brand: "Lenovo", ram: "12GB" }
+    ];
+    console.log("Laptops Array:", laptops);
+    document.write("Laptops Array: ");
+    for (let i = 0; i<laptops.length; i++) {
+      document.write(laptops[i].brand + " - " + laptops[i].ram + "<br>");
+    }
+    document.write("<br>");
+
+    let mobiles = [
+      { brand: "Samsung", price: 50000 },
+      { brand: "OnePlus", price: 45000 },
+      { brand: "Realme", price: 30000 }
+    ];
+    console.log("Mobiles Array:", mobiles);
+    document.write("Mobiles Array: ");
+    for (let i = 0; i<mobiles.length; i++) {
+      document.write(mobiles[i].brand + " - ₹" + mobiles[i].price + "<br>");
+    }
+    document.write("<br>");
+
+    let cities = [
+      { name: "Mumbai", state: "Maharashtra" },
+      { name: "Delhi", state: "Delhi" },
+      { name: "Chennai", state: "Tamil Nadu" }
+    ];
+    console.log("Cities Array:", cities);
+    document.write("Cities Array: ");
+    for (let i = 0; i<cities.length; i++) {
+      document.write(cities[i].name + " - " + cities[i].state + "<br>");
+    }
+    document.write("<br>");
+
+    //Nested array of object
+
+    let students = [
+      { name: "Rahul", marks: { math: 85, english: 90 } },
+      { name: "Sneha", marks: { math: 88, english: 92 } }
+    ];
+    console.log("Students Array:", students);
+    document.write("Students Array: ");
+    for (let i = 0; i<students.length; i++) {
+      document.write(students[i].name + " - Math: " + students[i].marks.math + ", English: " + students[i].marks.english + "<br>");
+    }
+    document.write("<br>");
+
+    let companies = [
+      { name: "TechCorp", manager: { name: "Suresh", experience: 10 } },
+      { name: "InfoSoft", manager: { name: "Priya", experience: 8 } }
+    ];
+    console.log("Companies Array:", companies);
+    document.write("Companies Array: ");
+    for (let i = 0; i<companies.length; i++) {
+      document.write(companies[i].name + " - Manager: " + companies[i].manager.name + ", Exp: " + companies[i].manager.experience + " yrs<br>");
+    }
+    document.write("<br>");
+
+    let products = [
+      { name: "Laptop", specs: { ram: "16GB", storage: "512GB" } },
+      { name: "Phone", specs: { ram: "8GB", storage: "256GB" } }
+    ];
+    console.log("Products Array:", products);
+    document.write("Products Array: ");
+    for (let i = 0; i<products.length; i++) {
+      document.write(products[i].name + " - RAM: " + products[i].specs.ram + ", Storage: " + products[i].specs.storage + "<br>");
+    }
+    document.write("<br>");
+
+    let teachers = [
+      { name: "Mr. Sharma", address: { city: "Delhi", pin: 110001 } },
+      { name: "Mrs. Singh", address: { city: "Pune", pin: 411001 } }
+    ];
+    console.log("Teachers Array:", teachers);
+    document.write("Teachers Array: ");
+    for (let i = 0; i<teachers.length; i++) {
+      document.write(teachers[i].name + " - City: " + teachers[i].address.city + ", Pin: " + teachers[i].address.pin + "<br>");
+    }
+    document.write("<br>");
+
+    let employees = [
+      { id: 101, department: { name: "HR", floor: 2 } },
+      { id: 102, department: { name: "IT", floor: 3 } }
+    ];
+    console.log("Employees Array:", employees);
+    document.write("Employees Array: ");
+    for (let i = 0; i<employees.length; i++) {
+      document.write("ID: " + employees[i].id + ", Dept: " + employees[i].department.name + ", Floor: " + employees[i].department.floor + "<br>");
+    }
+    document.write("<br>");
+
+    let schools = [
+      { name: "Greenwood High", principal: { name: "Mrs. Mehta", experience: 15 }, students: { total: 500, classes: 12 } },
+      { name: "Sunrise School", principal: { name: "Mr. Verma", experience: 12 }, students: { total: 400, classes: 10 } }
+    ];
+    console.log("Schools Array:", schools);
+    document.write("Schools Array: ");
+    for (let i = 0; i<schools.length; i++) {
+      document.write(schools[i].name + " - Principal: " + schools[i].principal.name + ", Students: " + schools[i].students.total + "<br>");
+    }
+    document.write("<br>");
+  </script>
+</body>
+</html>

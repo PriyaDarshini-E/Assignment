@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested for loop</title>
+</head>
+
+<body>
+    <h1>Nested for loop</h1>
+    <script>
+        //Task 1: Create an array and do some math
+        let numbers = [2, 4, 6, 8, 10];
+
+        for (let i = 0; i < numbers.length; i++) {
+            let square = numbers[i] * numbers[i];
+            console.log("square of " + numbers[i] + "=" + square);
+        }
+
+        // Task 2: Using for loop on array
+        let fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
+
+        for (let i=0; i<fruits.length;i++) {
+            console.log("Fruit:"+fruits[i]);
+        }
+
+
+        // Task 3: Nested loop using 2 loops
+        for (let i=1; i<=3;i++) {
+            for (let j = 1; j <= 3; j++) {
+                console.log("I=" + i + "," + "J=" +j);
+            }
+        }   
+    </script>
+</body>
+
+</html>

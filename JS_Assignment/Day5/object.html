@@ -6,6 +6,58 @@
     <title>Object</title>
 </head>
 <body>
-    
+    <h1>Object : collection of structure data it must have key and value pair.</h1>
+    <script>
+    //Simple Object
+    let person = { name: "John", age: 25, city: "New York" };
+    console.log("Person Object:", person);
+    document.write("Person Object: " + person.name + ", " + person.age + ", " + person.city + "<br><br>");
+
+    let car = { brand: "Toyota", model: "Corolla", year: 2021 };
+    console.log("Car Object:", car);
+    document.write("Car Object: " + car.brand + ", " + car.model + ", " + car.year + "<br><br>");
+
+    let laptop = { brand: "HP", processor: "i5", ram: "8GB" };
+    console.log("Laptop Object:", laptop);
+    document.write("Laptop Object: " + laptop.brand + ", " + laptop.processor + ", " + laptop.ram + "<br><br>");
+
+    let book = { title: "JavaScript Basics", author: "Alice", pages: 250 };
+    console.log("Book Object:", book);
+    document.write("Book Object: " + book.title + ", " + book.author + ", " + book.pages + "<br><br>");
+
+    let phone = { brand: "Samsung", model: "Galaxy S21", price: 60000 };
+    console.log("Phone Object:", phone);
+    document.write("Phone Object: " + phone.brand + ", " + phone.model + ", " + phone.price + "<br><br>");
+
+    let movie = { name: "Inception", genre: "Sci-Fi", rating: 8.8 };
+    console.log("Movie Object:", movie);
+    document.write("Movie Object: " + movie.name + ", " + movie.genre + ", " + movie.rating + "<br><br>");
+
+    //Nested Object
+    let student = {name:"Rahul",marks:{ math: 90, science: 85, english: 88 }};
+    console.log("Student Object:", student.name);
+    document.write("Student Object: " + student.name + "," +"Marks:" +student.marks.math +","+student.marks.english+ "<br><br>");
+
+    let company = {name: "TechCorp",location: "Bangalore",manager: {name: "Suresh", experience: 10}};
+    console.log("Company Object:", company);
+    document.write("Company Object: " + company.name + ", " + company.location + ", Manager: " + company.manager.name + "<br><br>");
+
+    let product = {name: "Laptop",price: 75000,specs: { ram: "16GB", storage: "512GB SSD", processor: "i7" }};
+    console.log("Product Object:", product);
+    document.write("Product Object: " + product.name + ", Specs: " +product.specs.ram.storage +"<br><br>");
+
+    let teacher = {name: "Mr. Sharma",subject: "Math",address: { city: "Delhi", pincode: 110001 }};
+    console.log("Teacher Object:", teacher);
+    document.write("Teacher Object: " + teacher.name + ", City: " + teacher.address.city + "<br><br>");
+
+    let employee = {id: 101,name: "Neha",department: { name: "HR", floor: 3 }};
+    console.log("Employee Object:", employee);
+    document.write("Employee Object: " + employee.name + ", Dept: " + employee.department.name + "<br><br>");
+
+    let school = {name: "Greenwood High",location: "Pune",principal: { name: "Mrs. Mehta", experience: 15 },
+    students: { total: 500, classes: 12 }};
+    console.log("School Object:", school);
+    document.write("School Object: " + school.name + ", Principal: " + school.principal.name + ", Students: " + school.students.total + "<br><br>");
+  </script>
 </body>
 </html>

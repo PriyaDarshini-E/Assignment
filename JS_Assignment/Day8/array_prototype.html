@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Array Prototype or built-in Method </title>
 </head>
+
 <body>
-    
+    <h1>Array Prototype or built-in Method </h1>
+    <script>
+        let numbers = [10, 20, 30, 40, 50];
+        console.log("Original Array:", numbers);
+
+        //push() - Add element at end
+        numbers.push(60);
+        console.log("After push:", numbers);
+
+        //pop() - Remove last element
+        numbers.pop();
+        console.log("After pop:", numbers);
+
+        //shift() - Remove first element
+        numbers.shift();
+        console.log("After shift:", numbers);
+
+        //unshift() - Add element at beginning
+        numbers.unshift(5);
+        console.log("After unshift:", numbers);
+
+        //concat() - Merge arrays
+        let moreNumbers = [60, 70, 80];
+        let merged = numbers.concat(moreNumbers);
+        console.log("After concat:", merged);
+        
+        //join() - Join array into string
+        console.log("Joined String:", merged.join(" - "));
+
+        //reverse() - Reverse array order
+        console.log("Reversed:", merged.reverse());
+
+        //slice() - Extract part of array
+        let sliced = merged.slice(2, 5);
+        console.log("After slice (2,5):", sliced);
+
+        //splice() - Add/Remove elements
+        merged.splice(2, 1, 99); 
+        console.log("After splice:", merged);
+
+        //includes() - Check if value exists
+        console.log("Includes 40?", merged.includes(40));
+
+        //indexOf() - Find index of value
+        console.log("Index of 99:", merged.indexOf(99));
+
+       
+
+
+
+    </script>
 </body>
+
 </html>

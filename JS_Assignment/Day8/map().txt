@@ -1,0 +1,12 @@
+array1.map(function(item) {});
+array2.map(function(element, index) {});
+array3.map(function(value, index, array) {});
+array4.map((item) => {});
+array5.map((item, index) => {});
+array6.map((value, index, arr) => {});
+array7.map(item => {});
+array8.map((num) => {});
+array9.map((x, i) => {});
+array10.map(function(x) {});
+array11.map(function(x, i, arr) {});
+array12.map((data, idx, all) => {});
