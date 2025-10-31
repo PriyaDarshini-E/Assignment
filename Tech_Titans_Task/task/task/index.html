@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Tradition Books</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">📚 Indian Tradition Books</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Books</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Banner -->
+  <section class="banner">
+    <div class="banner-content">
+      <h1>Discover the Wisdom of Indian Tradition</h1>
+      <p>Explore ancient knowledge, spirituality, and culture.</p>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search books...">
+        <button id="searchBtn">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book Section -->
+  <section id="bookSection" class="book-section">
+    <h2>Famous Indian Traditional Books</h2>
+    <div id="bookContainer" class="book-container"></div>
+  </section>
+
+  <!-- Add Book Form Section -->
+  <section class="add-book-section">
+    <h2>📘 Add Your Favorite Indian Book</h2>
+    <button id="openFormBtn">Add Book</button>
+
+    <div id="formPopup" class="form-popup">
+      <h3>Submit Book Details</h3>
+      <input type="text" id="userName" placeholder="Your Name">
+      <input type="text" id="phone" placeholder="Phone Number">
+      <input type="text" id="bookName" placeholder="Book Name">
+      <input type="text" id="quote" placeholder="Quote from Book">
+      <input type="text" id="imageURL" placeholder="Image URL">
+      <button id="submitBtn">Submit</button>
+      <button id="closeFormBtn" class="close-btn">Close</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
