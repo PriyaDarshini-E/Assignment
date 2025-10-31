@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sona's Tea Shop</title>
+<link rel="stylesheet" href="tea_shop_dom_maniplation.css">
+</head>
+<body>
+
+<div class="container" id="home">
+  <h1>Welcome to Tea Shop </h1>
+  <p>Click below to start your tea journey!</p>
+  <button onclick="showMenu()">Start Your Order</button>
+</div>
+
+<div class="container menu-items" id="menu">
+  <h1>Our Menu</h1>
+  <div class="menu-grid">
+    <div onclick="selectItem('Masala Tea')">
+      <img src="../Day11/img/Masala_Tea.webp" alt="Masala Tea">
+      <p>Masala Tea</p>
+    </div>
+    <div onclick="selectItem('Lemon Tea')">
+      <img src="../Day11/img/Lemon-Tea.webp" alt="Lemon Tea">
+      <p>Lemon Tea</p>
+    </div>
+    <div onclick="selectItem('Ginger Tea')">
+      <img src="../Day11/img/Ginger_tea.jpeg" alt="Ginger Tea">
+      <p>Ginger Tea</p>
+    </div>
+  </div>
+  <button onclick="goHome()">Back</button>
+</div>
+
+<div class="container order-section" id="order">
+  <h1>Your Order</h1>
+  <p id="orderItem">Selected Item: </p>
+  <img src="https://cdn-icons-png.flaticon.com/512/1006/1006544.png" width="100px" alt="Order Icon">
+  <br>
+  <button onclick="goToPayment()">Proceed to Payment</button>
+</div>
+
+<div class="container payment-section" id="payment">
+  <h1>Payment</h1>
+  <p>Choose your payment method:</p>
+  <button onclick="completePayment()">Pay Now 💳</button>
+</div>
+
+<div class="container thanks-section" id="thanks">
+  <h1>Thank You for Visiting! ☕</h1>
+  <p>Enjoy your day!</p>
+  <img src="../Day11/img/thanks_img.jpg" class="thanks-img" alt="Thank You">
+</div>
+
+
+<script src="tea_shop_dom_maniplation.js"> </script>
+
+</body>
+</html>

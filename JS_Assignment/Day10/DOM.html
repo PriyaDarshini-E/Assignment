@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Notes</title>
+  <link rel="stylesheet" href="Dom.css">
+</head>
+<body>
+
+  <header>JavaScript DOM Notes</header>
+
+  <div class="container">
+
+    <h2>What is DOM?</h2>
+    <p>The <b>Document Object Model (DOM)</b> is a programming interface for web documents.  
+      It represents the structure of an HTML document as a tree of objects, where each element (like a tag, attribute, or text) becomes a node in the tree.</p>
+    
+    <div class="highlight">
+      <p><b>Example:</b>  
+        <code>document.getElementById("demo").innerHTML = "Hello DOM!";</code>
+      </p>
+    </div>
+
+    <h2>DOM Syntax</h2>
+    <p>Basic syntax to access or modify HTML elements:</p>
+    <ul>
+      <li><code>document.getElementById("id")</code></li>
+      <li><code>document.getElementsByClassName("class")</code></li>
+      <li><code>document.getElementsByTagName("tag")</code></li>
+      <li><code>document.querySelector("selector")</code></li>
+      <li><code>document.querySelectorAll("selector")</code></li>
+    </ul>
+
+    <div class="highlight">
+      <p><b>Example:</b>  
+        <code>document.querySelector("p").style.color = "blue";</code>
+      </p>
+    </div>
+
+    <h2>DOM Selectors</h2>
+    <p>Selectors help us to <b>find elements</b> in the HTML document.</p>
+    <ul>
+      <li><b>By ID:</b> <code>document.getElementById("heading")</code></li>
+      <li><b>By Class:</b> <code>document.getElementsByClassName("para")</code></li>
+      <li><b>By Tag:</b> <code>document.getElementsByTagName("div")</code></li>
+      <li><b>By CSS Selector:</b> <code>document.querySelector(".box")</code></li>
+    </ul>
+
+    <h2>DOM Properties</h2>
+    <p>DOM properties are used to <b>get or set values</b> of HTML elements.</p>
+    <ul>
+      <li><code>innerHTML()</code> - Change HTML content</li>
+      <li><code>innerText()</code> - Change text only</li>
+      <li><code>style()</code> - Change CSS styles dynamically</li>
+      <li><code>value()</code> - Get or set input values</li>
+      <li><code>src()</code> - Change image source</li>
+      <li><code>href()</code> - Change link URL</li>
+      <li><code>setAttribute()</code> - Add/Modify</li>
+      <li><code>remove()</code> - want to remove any element or tag </li>
+      <li><code>appendChild()</code> - want to add any child for a element</li>
+      <li><code>createElement()</code> - want to create element or tag</li>
+    </ul>
+
+    <div class="highlight">
+      <p><b>Example:</b>  
+        <pre>document.getElementById("title").style.color = "green";</pre>
+      </p>
+    </div>
+
+    <h2>DOM Events</h2>
+    <p>Events are actions that happen in the browser (like clicks, mouse moves, or key presses).  
+      We can use JavaScript to handle them.</p>
+    <ul>
+      <li><code>onclick</code> - When a button or element is clicked</li>
+      <li><code>onmouseover</code> - When mouse hovers over an element</li>
+      <li><code>onmouseout</code> - When mouse leaves an element</li>
+      <li><code>onchange</code> - When value changes (input, select)</li>
+      <li><code>onkeyup</code> - When a key is released</li>
+    </ul>
+
+    <div class="highlight">
+      <p><b>Example:</b>  
+        <code>&lt;button onclick="alert('Hello DOM!')"&gt;Click Me&lt;/button&gt;</code>
+      </p>
+    </div>
+
+  </div>
+
+  <footer>© 2025 DOM Learning Notes | Made with 💻 and ☕</footer>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+let result = (a > b) ? "A is greater" : "B is greater";
+let status = (age >= 18) ? "Adult" : "Minor";
+let discount = (price > 1000) ? "10% off" : "No discount";
+let login = (user === "admin") ? "Welcome Admin" : "Access Denied";
+let check = (marks >= 40) ? "Pass" : "Fail";
+let access = (loggedIn) ? "Granted" : "Denied";
+let temp = (temperature > 30) ? "Hot" : "Cool";
+let evenOdd = (num % 2 === 0) ? "Even" : "Odd";
+let dayType = (day === "Sunday") ? "Holiday" : "Working Day";
+let grade = (score >= 90) ? "A" : "B";
+let eligibility = (age >= 21) ? "Eligible" : "Not Eligible";
+let message = (balance > 0) ? "Active" : "Inactive";

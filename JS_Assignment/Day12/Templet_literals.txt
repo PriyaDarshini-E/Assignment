@@ -1,0 +1,12 @@
+`Hello ${name}`;
+`The total is ${price * quantity}`;
+`My name is ${first_Name} ${last_Name}`;
+`Today’s date is ${date}`;
+`${greeting}, welcome to ${place}`;
+`The result is ${a + b}`;
+`Item: ${item}, Price: ${cost}`;
+`User ${username} logged in at ${time}`;
+`${city} is in ${country}`;
+`Temperature is ${temp}°C`;
+`${fruit} costs ${price} per kg`;
+`You ordered ${quantity} ${product}(s)`;

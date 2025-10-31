@@ -1,0 +1,24 @@
+#myform{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:x-large;
+    margin-left: 50px;
+    padding: 20px;
+}
+#btn{
+    /* background-color: aqua; */
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+#choose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#images{
+    /* background-color: black; */
+    /* width: 10px;
+    height: 200px; */
+}
