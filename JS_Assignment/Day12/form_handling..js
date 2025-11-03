@@ -4,15 +4,15 @@ let submit = document.getElementById("submit_btn")
 let actress_Keerthy = document.getElementById("Keerthy")
 
 form.addEventListener("click", (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     // const actress = document.getElementById("actress").value
 
     const query = document.getElementById('actress').value;
-    if (!query) {
-        alert('Please select an option');
-        return
-    }
+        // if (!query) {
+        //     alert('Please select an option');
+        //     return
+        // }
     // } else if (query === actress_Keerthy) {
     //     img.src = "../Day12/Image/keerthy1.jpg"
     // }

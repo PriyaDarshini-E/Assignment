@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread operator</title>
+</head>
+
+<body>
+    <h1>Spread operator(...)</h1>
+    <script>
+        // 1
+        const a = ["react"];
+        const b = ["java"];
+        console.log(...a);
+
+        // 2
+        const arr1 = ["react", "java", "html"];
+        console.log(...arr1);
+        // document.write(...arr1);
+
+        //3 
+        const original = ["node", "express"];
+        const copy = [...original];
+        console.log(copy);
+        // document.write(copy);
+
+        //4 
+        const arr = ["css", "js"];
+        const newArr = ["html", ...arr, "react"];
+        console.log(newArr);
+        // document.write(newArr);
+
+        // 5
+        const person = { name: "John", age: 25 };
+        const job = { title: "Developer" };
+        console.log({ ...person, ...job });
+
+        // 6
+        const str = "Hello";
+        console.log(...str);
+        // document.write([...str]);
+
+        // 7
+        const frontend = [{ name: "HTML" }, { name: "CSS" }];
+        const backend = [{ name: "Node" }, { name: "Express" }];
+        const fullStack = [...frontend, ...backend];
+        console.log(fullStack);
+
+        // 9
+        const numbers = [10, 20, 30];
+        console.log(Math.min(...numbers));
+        // document.write(Math.max(...numbers));
+    </script>
+</body>
+
+</html>
