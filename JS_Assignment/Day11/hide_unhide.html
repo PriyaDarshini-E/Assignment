@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and Unhide the Box</title>
+    <style>
+        #box {
+            background: #000;
+            color: white;
+            padding: 20px;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hide and Unhide the Box</h1>
+
+    <button id="btn">Hide</button>
+    <div id="box">This is a Box</div>
+
+    <script>
+        const box = document.getElementById("box");
+        const button = document.getElementById("btn");
+
+        box.style.display = "none"
+        button.innerText = "Show"
+        button.addEventListener("click", () => {
+            if (box.style.display === "none") {
+                box.style.display = "flex";
+                btn.textContent = "Hide";
+            } else {
+                box.style.display = "none";
+                btn.textContent = "Show";
+            }
+        });
+        
+    </script>
+</body>
+
+</html>

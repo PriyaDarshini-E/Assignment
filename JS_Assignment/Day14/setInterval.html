@@ -1,0 +1,59 @@
+<script>
+loop(
+    setTimeout(() => {
+        document.write("Ram wake up at 3:00 am <br><br>")
+        setTimeout(() => {
+            document.write("Ram goes for a bath <br><br>")
+            setTimeout(() => {
+                document.write("Ram is getting ready for work <br><br>")
+                setTimeout(() => {
+                    document.write("Ram finishes his breakfast <br><br>")
+                    setTimeout(() => {
+                        document.write("Ram leaves home for office <br><br>")
+                        setTimeout(() => {
+                            document.write("Ram is on the way to office <br><br>")
+                            setTimeout(() => {
+                                document.write("Ram reaches office <br><br>")
+                                setTimeout(() => {
+                                    document.write("Ram sets up everything in the office <br><br>")
+                                    setTimeout(() => {
+                                        document.write("Ram starts working <br><br>")
+                                        setTimeout(() => {
+                                            document.write("Ram finishes his lunch <br><br>")
+                                            setTimeout(() => {
+                                                document.write("Ram leaves office <br><br>")
+                                                setTimeout(() => {
+                                                    document.write("Ram reaches home <br><br>")
+                                                    setTimeout(() => {
+                                                        document.write("Ram freshens up <br><br>")
+                                                        setTimeout(() => {
+                                                            document.write("Ram finishes his dinner <br><br>")
+                                                            setTimeout(() => {
+                                                                document.write("Ram sleeps at 10:00 PM <br><br>")
+                                                            }, 15000)
+                                                        }, 14000)
+                                                    }, 13000)
+                                                }, 12000)
+                                            }, 11000)
+                                        }, 10000)
+                                    }, 9000)
+                                }, 8000)
+                            }, 7000)
+                        }, 6000)
+                    }, 5000)
+                }, 4000)
+            }, 3000)
+        }, 2000)
+    }, 1000)
+)
+
+const count =1;
+const timer = setInterval(() => {
+    loop();
+    count++;
+    if(timer ==2){
+        clearInterval();
+    }
+
+})
+</script>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="newbox">
+        <button id="btn">Click to Hide</button>
+        <p id="show"></p>
+        <img src="" id="imgs" alt="">
+    </div>
+
+    <!-- <form>
+        <input type="text" id="data" placeholder="Enter the Name">
+        <button id="btn">Click</button>
+    </form> -->
+
+    <Script>
+         const btnHide = document.getElementById("btn") 
+         const showing = document.getElementById("show")
+         const style_1 = document.getElementById("newbox")
+         const images = document.getElementById("imgs")
+        btnHide.addEventListener("click",()=>{
+            // btnHide.style.display = "none"
+            showing.innerHTML = "<b>This is Hide</b>"
+             style_1.style.textAlign = "center"
+             style_1.style.backgroundColor = "red"
+
+            images.src = "../Day12/Image/keerthy1.jpg"
+          alert("succfully code")
+        })
+    </Script>
+</body>
+
+</html>

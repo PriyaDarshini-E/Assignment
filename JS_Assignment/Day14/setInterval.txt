@@ -1,0 +1,18 @@
+setInterval(function() {}, 1000);
+setInterval(() => {}, 1000);
+setInterval(myFunction, 2000);
+setInterval(() => console.log("Hello"), 1000);
+setInterval(greet, 1500, "Alice");
+setInterval((name, age) => {}, 1200, "Bob", 25);
+setInterval(() => console.log("Running..."), intervalTime);
+setInterval(() => console.log(message), 1800);
+let id = setInterval(() => {}, 3000);
+clearInterval(id);
+setInterval(() => { console.log("Tick"); setInterval(() => {}, 1000); }, 1000);
+function repeatAction() { setInterval(() => {}, 2000); }
+const runEvery = (cb, d) => setInterval(cb, d);
+for (let i = 1; i <= 3; i++) setInterval(() => {}, i * 1000);
+setInterval(function named() {}, 1000);
+setInterval(function() {}, 1000);
+setInterval(() => {}, 500);
+setInterval(() => { document.body.style.backgroundColor = "lightblue"; }, 2000);

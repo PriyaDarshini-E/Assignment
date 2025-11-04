@@ -21,7 +21,7 @@ form.addEventListener("click", (e) => {
     for(let i=1;i<=10;i++)
     {
         const image =document.createElement("img")
-        image.src = `images/${keerthy1}/${i}`; // e.g. images/Keerthy/1.jpg
+        image.src = `images/${keerthy1}/${i}`;
     // img.alt = `${actress} image ${i}`;
     imageContainer.appendChild(img);
     }
