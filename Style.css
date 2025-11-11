@@ -1,88 +1,182 @@
-.main{
-    background: #050505;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 20px;
-}
-.main a{
-    color: white;
-}
-a{
-    text-decoration: none;
-}
-.cards{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.first{
-    width: 50%;
-    height: 75vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.sec{
-    width: 50%;
-    height: 75vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.third{
-    width: 50%;
-    height: 75vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.grp{
-    width: 50%;
-    height: 75vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.cards div {
-    position: relative;
+/* 🌼 GENERAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.cards img {
-    width: 290px;
-    height: 174px;
-    border-radius: 10px;
+body {
+  background-color: #f8f9fa;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  scroll-behavior: smooth;
 }
-.cards h3 {
-    position:absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 8px 12px;
-    border-radius: 6px;
-    text-align: center;
-    font-size: 18px;
+
+/* 🌟 HEADER */
+header {
+  text-align: center;
+  background: linear-gradient(90deg, #74b9ff, #a29bfe);
+  padding: 1.8rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #6c5ce7;
 }
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.main a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.main a:hover {
+  background-color: #fff;
+  color: #6c5ce7;
+  border-color: #fff;
+}
+
+/* 🃏 CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 3rem 10%;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #6c5ce7;
+  transition: transform 0.4s ease;
+}
+
+.card h3 {
+  text-align: center;
+  color: #6c5ce7;
+  padding: 12px;
+  margin: 0;
+  font-size: 1.2rem;
+  background-color: #f1f2f6;
+}
+
+.card h3 a {
+  color: #6c5ce7;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(108, 92, 231, 0.3);
+}
+
+.card:hover img {
+  transform: scale(1.08);
+}
+
+/* 🎞️ FADE-IN ANIMATIONS */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.delay1 { animation-delay: 0.2s; }
+.delay2 { animation-delay: 0.4s; }
+.delay3 { animation-delay: 0.6s; }
+.delay4 { animation-delay: 0.8s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📅 DAY LIST SECTION (unchanged style — adapted for light theme) */
 .day-list {
-    list-style: none;
-    padding: 30px;
-    text-align: center;
+  list-style: none;
+  padding: 30px;
+  text-align: center;
 }
 
 .day-list li {
-    margin: 15px 0;
+  margin: 15px 0;
 }
 
 .day-list a {
-    text-decoration: none;
-    font-size: 20px;
-    color: #007bff;
-    font-weight: 500;
+  text-decoration: none;
+  font-size: 20px;
+  color: #007bff;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .day-list a:hover {
-    color: #0056b3;
-    text-decoration: underline;
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .main a {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .cards {
+    padding: 2rem;
+  }
+
+  .card img {
+    height: 180px;
+  }
+}
+
+/* ⚡ FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #eaeaea;
+  margin-top: auto;
+  font-size: 0.9rem;
+  color: #555;
 }
