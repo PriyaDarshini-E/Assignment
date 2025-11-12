@@ -50,6 +50,7 @@
       transform: translateY(-2px);
     }
 
+    /* Job Cards */
     .job-card {
       transition: transform 0.4s ease, box-shadow 0.4s ease;
     }
@@ -112,6 +113,25 @@
       padding-left: 20px;
       font-size: 15px;
     }
+
+    /* Modal Animation */
+    .modal-content {
+      border-radius: 15px;
+      overflow: hidden;
+      animation: fadeInUp 0.3s ease;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
   </style>
 </head>
 
@@ -144,7 +164,7 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb justify-content-center mb-0">
           <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-dark fw-semibold">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Thanks for the Register</li>
+          <li class="breadcrumb-item active" aria-current="page">Thanks for Registering</li>
         </ol>
       </nav>
     </div>
@@ -163,8 +183,8 @@
           <div class="card-body">
             <h5 class="job-title mb-3">🚗 Delivery & Transportation Jobs</h5>
             <ul>
-              <li>Delivery Driver (Zomato,Amazon)</li>
-              <li>Cab/Auto Driver (Uber,Ola)</li>
+              <li>Delivery Driver (Zomato, Amazon)</li>
+              <li>Cab/Auto Driver (Uber, Ola)</li>
               <li>Courier Partner</li>
               <li>Truck/Van Driver</li>
             </ul>
@@ -264,19 +284,48 @@
     </div>
   </div>
 
+  <!-- Modal (MUST be above script for it to exist before JS runs) -->
+  <div class="modal fade" id="learnMoreModal" tabindex="-1" aria-labelledby="learnMoreModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header" style="background: linear-gradient(90deg, #d67ee2, #6d9dfd);">
+          <h5 class="modal-title text-white fw-bold" id="learnMoreModalLabel">Job Details</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <h5 class="fw-bold job-title-modal mb-3"></h5>
+          <div class="modal-content-body"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-apply" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-learn">Apply Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    // Toggle advantages/disadvantages on Learn button click
-    document.querySelectorAll('.learn-btn').forEach(button => {
-      button.addEventListener('click', () => {
-        const details = button.closest('.card-body').querySelector('.details');
-        details.style.display = details.style.display === 'block' ? 'none' : 'block';
-        button.textContent = details.style.display === 'block' ? 'Hide Details' : 'Learn More';
+    document.addEventListener("DOMContentLoaded", () => {
+      const modalElement = document.getElementById('learnMoreModal');
+      const modal = new bootstrap.Modal(modalElement);
+      const modalTitle = modalElement.querySelector('.job-title-modal');
+      const modalBody = modalElement.querySelector('.modal-content-body');
+
+      document.querySelectorAll('.learn-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          const cardBody = button.closest('.card-body');
+          const jobTitle = cardBody.querySelector('.job-title').textContent;
+          const detailsHTML = cardBody.querySelector('.details').innerHTML;
+
+          modalTitle.textContent = jobTitle;
+          modalBody.innerHTML = detailsHTML;
+          modal.show();
+        });
       });
     });
   </script>
 </body>
-
 </html>
