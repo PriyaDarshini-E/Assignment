@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Complete Bootstrap Notes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body class="p-4">
+
+    <header>
+        <h1 class="text-center">Bootstrap Notes – Complete & Code-wise</h1>
+        <hr>
+    </header>
+
+    <main>
+        <h3>What is Bootstrap?</h3>
+        <p>
+            Bootstrap is a frontend CSS framework used to build responsive, fast and attractive websites using
+            pre-defined classes like <b>container</b>, <b>row</b>, <b>col</b>, <b>btn</b>, etc.
+        </p>
+    </main>
+
+    <hr>
+
+    <!-- Containers -->
+    <section>
+        <h2><u>1. Container Classes</u></h2>
+        <pre>
+&lt;div class="container"&gt;Fixed width&lt;/div&gt;
+&lt;div class="container-fluid"&gt;Full width&lt;/div&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Grid -->
+    <section>
+        <h2><u>2. Grid System + Breakpoints</u></h2>
+        <p>Used for layout. 12 Columns system.</p>
+        <pre>
+&lt;div class="row"&gt;
+  &lt;div class="col-6 col-md-4 bg-primary"&gt;A&lt;/div&gt;
+  &lt;div class="col-6 col-md-8 bg-warning"&gt;B&lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+
+        <h4>Breakpoints</h4>
+        <pre>
+sm | md | lg | xl | xxl
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Spacing -->
+    <section>
+        <h2><u>3. Spacing (Margin & Padding)</u></h2>
+        <pre>
+&lt;div class="m-3 p-2 bg-dark text-white"&gt;Spacing&lt;/div&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Colors -->
+    <section>
+        <h2><u>4. Colors</u></h2>
+        <pre>
+&lt;p class="text-danger"&gt;Red Text&lt;/p&gt;
+&lt;div class="bg-success text-white p-2"&gt;Green BG&lt;/div&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Borders -->
+    <section>
+        <h2><u>5. Borders</u></h2>
+        <pre>
+&lt;div class="border border-primary p-3"&gt;Border Box&lt;/div&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Buttons -->
+    <section>
+        <h2><u>6. Buttons</u></h2>
+        <pre>
+&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="btn btn-outline-dark"&gt;Outline&lt;/button&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Flex -->
+    <section>
+        <h2><u>7. Flexbox Utilities</u></h2>
+        <pre>
+&lt;div class="d-flex justify-content-between"&gt;
+  &lt;div&gt;A&lt;/div&gt;
+  &lt;div&gt;B&lt;/div&gt;
+  &lt;div&gt;C&lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Position -->
+    <section>
+        <h2><u>8. Position Utilities</u></h2>
+        <pre>
+&lt;div class="position-relative"&gt;
+  &lt;div class="position-absolute top-0 end-0 bg-warning"&gt;Top Right&lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Shadow -->
+    <section>
+        <h2><u>9. Shadow</u></h2>
+        <pre>
+&lt;div class="shadow p-3"&gt;Shadow Box&lt;/div&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Sizing -->
+    <section>
+        <h2><u>10. Sizing</u></h2>
+        <pre>
+&lt;div class="w-50 h-25 bg-info"&gt;Width 50%&lt;/div&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Text -->
+    <section>
+        <h2><u>11. Text Utilities</u></h2>
+        <pre>
+&lt;p class="text-center"&gt;Centered Text&lt;/p&gt;
+&lt;p class="text-uppercase"&gt;uppercase&lt;/p&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Font -->
+    <section>
+        <h2><u>12. Font Utilities</u></h2>
+        <pre>
+&lt;p class="fw-bold"&gt;Bold&lt;/p&gt;
+&lt;p class="fst-italic"&gt;Italic&lt;/p&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Icons -->
+    <section>
+        <h2><u>13. Bootstrap Icons</u></h2>
+        <pre>
+&lt;i class="bi bi-alarm"&gt;&lt;/i&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Cards -->
+    <section>
+        <h2><u>14. Cards</u></h2>
+        <pre>
+&lt;div class="card" style="width:18rem"&gt;
+  &lt;img src="img.jpg" class="card-img-top"&gt;
+  &lt;div class="card-body"&gt;Card Content&lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Breadcrumb -->
+    <section>
+        <h2><u>15. Breadcrumb</u></h2>
+        <pre>
+&lt;ol class="breadcrumb"&gt;
+  &lt;li class="breadcrumb-item"&gt;Home&lt;/li&gt;
+  &lt;li class="breadcrumb-item active"&gt;Page&lt;/li&gt;
+&lt;/ol&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Navbar -->
+    <section>
+        <h2><u>16. Navbar</u></h2>
+        <pre>
+&lt;nav class="navbar navbar-expand-lg navbar-dark bg-dark"&gt;
+  &lt;a class="navbar-brand"&gt;Brand&lt;/a&gt;
+&lt;/nav&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Dropdown -->
+    <section>
+        <h2><u>17. Dropdown</u></h2>
+        <pre>
+&lt;div class="dropdown"&gt;
+  &lt;button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"&gt;Menu&lt;/button&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;li&gt;&lt;a class="dropdown-item"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Collapse -->
+    <section>
+        <h2><u>18. Collapse</u></h2>
+        <pre>
+&lt;button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo"&gt;Open&lt;/button&gt;
+&lt;div id="demo" class="collapse"&gt;Hidden text&lt;/div&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Carousel -->
+    <section>
+        <h2><u>19. Carousel</u></h2>
+        <pre>
+&lt;div id="car" class="carousel slide" data-bs-ride="carousel"&gt;
+  &lt;div class="carousel-inner"&gt;
+    &lt;div class="carousel-item active"&gt;
+      &lt;img src="1.jpg" class="d-block w-100"&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="2.jpg" class="d-block w-100"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Modal -->
+    <section>
+        <h2><u>20. Modal</u></h2>
+        <pre>
+&lt;button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#m"&gt;Open&lt;/button&gt;
+&lt;div class="modal fade" id="m"&gt;
+  &lt;div class="modal-dialog"&gt;
+    &lt;div class="modal-content p-3"&gt;Modal Body&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Toast -->
+    <section>
+        <h2><u>21. Toast (Toaster)</u></h2>
+        <pre>
+&lt;div class="toast show"&gt;
+  &lt;div class="toast-body"&gt;Hello&lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Tooltip -->
+    <section>
+        <h2><u>22. Tooltip</u></h2>
+        <pre>
+&lt;button class="btn btn-dark" data-bs-toggle="tooltip" title="Hi"&gt;Hover&lt;/button&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- Form -->
+    <section>
+        <h2><u>23. Forms</u></h2>
+        <pre>
+&lt;input class="form-control" placeholder="Name"&gt;
+&lt;select class="form-select"&gt;
+  &lt;option&gt;Option&lt;/option&gt;
+&lt;/select&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <footer>
+        <h3 class="text-center">End of Complete Bootstrap Notes 😊</h3>
+    </footer>
+
+</body>
+</html>
