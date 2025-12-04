@@ -1,0 +1,50 @@
+SQL Data Types
+
+1.Numeric Data Types : Used to store numbers.
+      INT – whole numbers (e.g., 10, 200)
+
+      BIGINT – very large whole numbers
+
+      SMALLINT – small whole numbers
+
+      TINYINT – very small whole numbers
+
+      DECIMAL(p,s) – exact decimal values
+(Example: DECIMAL(5,2) → 999.99)
+
+      NUMERIC(p,s) – same as DECIMAL
+
+      FLOAT – approximate decimal values
+
+      DOUBLE – large approximate decimal values.
+
+
+2.String / Character Data Types : Used for text values.
+	CHAR(n) – fixed length string
+	Example: CHAR(10) → always 10 characters
+
+	VARCHAR(n) – variable length string
+	Example: VARCHAR(50)
+
+	TEXT – long text.
+
+3.Date and Time Data Types :
+	DATE – only date (YYYY-MM-DD)
+
+	TIME – only time (HH:MM:SS)
+	
+	DATETIME – date + time
+
+	TIMESTAMP – date & time + auto tracking
+
+	YEAR – year value.
+
+4.Binary Data Types : 
+	BINARY(n) – fixed binary data
+
+	VARBINARY(n) – variable binary
+
+	BLOB – used for images, files, videos.
+
+5.Boolean : 
+	BOOLEAN / BOOL – TRUE or FALSE.

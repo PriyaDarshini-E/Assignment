@@ -1,0 +1,25 @@
+SQL Constraints : Constraints are rules applied to columns for data validation.
+
+1.NOT NULL : Column cannot be empty.
+	eg : name VARCHAR(30) NOT NULL;
+
+.UNIQUE : Value must be unique (no duplicates).
+	eg : email VARCHAR(50) UNIQUE;
+
+3.PRIMARY KEY : Uniquely identifies each row.(Automatically NOT NULL + UNIQUE)
+	eg : id INT PRIMARY KEY;
+
+4.FOREIGN KEY : Links one table to another.
+	eg : FOREIGN KEY (dept_id) REFERENCES department(id);
+
+5.CHECK : Validates data with a condition.
+	eg : age INT CHECK (age >= 18);
+
+6.DEFAULT : Sets default value if user does not provide one.
+	eg : status VARCHAR(10) DEFAULT 'active';
+
+7.AUTO_INCREMENT (MySQL) : Automatically increases values.
+	eg : id INT PRIMARY KEY AUTO_INCREMENT;
+
+8.INDEX : Improves search performance (not a strict constraint but used for optimization).
+	eg : CREATE INDEX idx_name ON students(name);
